@@ -7,8 +7,12 @@ That didn't work for me! Instead something like:
 library(devtools)
 library(withr)
 
-with_libpaths(new = "c:/Users/vkeli/OneDrive - The University of Melbourne/Rprojects/DailyMeasureDeployR/app/library", install_github("https://github.com/DavidPatShuiFong/shinycssloaders"))
+withr::with_libpaths(new = "c:/Users/vkeli/OneDrive - The University of Melbourne/Rprojects/DailyMeasureDeployR/app/library",
+                     install_github("https://github.com/DavidPatShuiFong/shinycssloaders"))
 
+(prefixing with_libpaths with withr:: avoids having to load the withr library, and complaints that 'withr'
+is already loaded prior to install!)
+					 
 shinycssloaders - loading animations
  custom version based on Gao Zheng's 'transparent' background version
  installed with devtools::install_github('DavidPatShuiFong/shinycssloaders')
