@@ -9,3 +9,18 @@ jsonlite
 
 # if deploying shiny based applications:
 shiny
+tidyverse
+dbplyr
+shinyjs
+shinydashboard
+shinydashboardPlus
+shinyWidgets
+shinytoastr
+shinyFiles
+DBI
+odbc
+RSQLite
+pool 
+configr
+DT       
+lubridate
