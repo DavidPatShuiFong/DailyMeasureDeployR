@@ -11,10 +11,7 @@
 #  custom version based on Gao Zheng's 'transparent' background version
 #  installed with devtools::install_github('DavidPatShuiFong/shinycssloaders')
 
-remotes::install_git("https://github.com/DavidPatShuiFong/shinycssloaders", lib = local_libpath)
-
-withr::with_libpaths(new = local_libpath,
-                     install_git("https://github.com/DavidPatShuiFong/shinycssloaders"))
+install_git("https://github.com/DavidPatShuiFong/shinycssloaders", lib = local_libpath)
 
 # DTedit - datatable edit wrapper.
 #  substantially based on jbryer/DTedit

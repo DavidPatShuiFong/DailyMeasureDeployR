@@ -60,7 +60,8 @@ appexit_msg = tryCatch({
 
   # app is launched in the system default browser (if FF or Chrome, should work
   # fine, IE needs to be >= 10)
-  source(file.path(appwd, 'app', 'app.R'))
+  source(file.path(appwd, 'app', 'app.R'), verbose = TRUE, local = TRUE)
+  # 'verbose' required to open web window (!), 'local' maintains same environment
 
   'application terminated normally'
 },
