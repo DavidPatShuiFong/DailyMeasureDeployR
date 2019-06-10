@@ -6,6 +6,8 @@
 #  library(devtools)    # this is needed first!
 #
 #  install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = local_libpath)
+
+local_libpath <- "app/library"
 				 
 # shinycssloaders - loading animations
 #  custom version based on Gao Zheng's 'transparent' background version
@@ -29,5 +31,5 @@ install_git("https://github.com/rstudio/DT", lib = local_libpath)
 # DailyMeasure - the actual app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
 
-install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = local_libpath)
-# alternatively install(as.package("C:/Users/David/Rprojects/DailyMeasure"), lib = local_libpath)
+# install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = local_libpath)
+install_local("C:/Users/vkeli/Rprojects/DailyMeasure", lib = local_libpath)
