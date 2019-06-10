@@ -20,7 +20,7 @@ shinyFiles
 DBI
 odbc
 RSQLite
-pool 
-configr
-DT       
+pool
+dplyr
+configr    
 lubridate
