@@ -3,3 +3,9 @@ R-Portable/
 library/
 log/
 .Rproj.user
+
+\.Rhistory
+
+DailyMeasure_cfg\.sqlite
+
+DailyMeasure_cfg\.yaml
