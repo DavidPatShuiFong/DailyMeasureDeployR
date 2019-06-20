@@ -24,3 +24,4 @@ pool
 dplyr
 configr    
 lubridate
+DailyMeasure

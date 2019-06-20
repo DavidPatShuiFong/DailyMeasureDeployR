@@ -7,6 +7,9 @@ library(devtools)    # this is needed first!
 #
 #  install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = local_libpath)
 
+# don't forget to set current directory to the base directory, where 'app/library' can be found!
+# portable R will, from the Windows GUI, start in R.home() instead
+
 appwd = getwd()
 applibpath = file.path(appwd, 'app', 'library')
 .libPaths(file.path(chartr("\\", "/", R.home()), "library"))
