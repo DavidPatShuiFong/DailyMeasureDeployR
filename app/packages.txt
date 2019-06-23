@@ -9,7 +9,7 @@ jsonlite
 
 # if deploying shiny based applications:
 shiny
-tidyverse
+tidyr
 dbplyr
 shinyjs
 shinydashboard
@@ -21,7 +21,11 @@ DBI
 odbc
 RSQLite
 pool
+DT
+stringi
+magrittr
+sodium
+R6
 dplyr
 configr    
-lubridate
 DailyMeasure
