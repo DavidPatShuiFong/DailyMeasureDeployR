@@ -37,6 +37,13 @@ install_git("https://github.com/rstudio/DT", lib = applibpath)
 
 install_git("https://github.com/DavidPatShuiFong/DTedit", lib = applibpath)
 
+# dbConnection - generalized database access object
+#  uses either DBI or pool, depending on availability or preferences
+#  (removes absolute requirement for package 'pool')
+#  devtools::install_github('DavidPatShuiFong/dbConnection')
+
+install_git("https://github.com/DavidPatShuiFong/dbConnection", lib = applibpath)
+
 # DailyMeasure - the actual app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
 
