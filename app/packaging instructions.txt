@@ -1,0 +1,23 @@
+Installing from 'skeleton' DesktopDeployR clone
+
+* Install R-Portable into ./dist (resulting directory will be ./dist/R-Portable)
+
+* Start R-Portable
+
+** set the current directory the base-directory (which has ./app and ./dist directories)
+
+** source the ./dist/script/R/run.R script. 
+   This will install packages described in ./app/packages.txt
+   It tries to start DailyMeasure, but this package isn't installed yet...
+   
+** install the devtools packages
+   install.packages("devtools")
+
+** source the ./app/packagesCustom.R
+   This will install dMeasure and DailyMeausre packages
+   Also installs various other packages which are not 'standard' CRAN/MRAN packages
+   or where more up-to-date 'development' version of the package is required
+
+DailyMeasure.bat will start the application
+
+The .iss file for Innosetup is in the base directory
