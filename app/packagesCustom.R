@@ -28,7 +28,7 @@ if (!dir.exists(applibpath)) {
 install_git("https://github.com/DavidPatShuiFong/shinycssloaders", lib = applibpath)
 
 # DT - datatables for R. 
-#   requires version 0.5.3 (development version) or 0.6.0 (CRAN release versioin) or greater
+#   requires version 0.5.3 (development version) or 0.6.0 (CRAN release version) or greater
 #   unfortunately, MRAN 15th April 2019 only has version 0.5.0
 #   remotes::install_github('rstudio/DT')
 
@@ -47,8 +47,10 @@ install_git("https://github.com/DavidPatShuiFong/DTedit", lib = applibpath)
 
 install_git("https://github.com/DavidPatShuiFong/dbConnection", lib = applibpath)
 
-# DailyMeasure - the actual app
-#  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
+# dMeasure - the object-oriented R6 engine of the application
+install_git("https://github.com/DavidPatShuiFong/dMeasure", lib = applibpath)
 
-# install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath)
-install_local("C:/Users/David/Rprojects/DailyMeasure", lib = applibpath)
+# DailyMeasure - the web/shiny interface to the app
+#  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
+#  install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath)
+install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)

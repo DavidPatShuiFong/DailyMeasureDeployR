@@ -6,7 +6,7 @@
 
 [Setup]
 AppName=DailyMeasure
-AppVersion=0.2.1.4
+AppVersion=1.0.0
 WizardStyle=modern
 DefaultDirName={autopf}\DailyMeasure
 ; Since no icons will be created in "{group}", we don't need the wizard
