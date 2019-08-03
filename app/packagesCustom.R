@@ -45,12 +45,12 @@ install_git("https://github.com/DavidPatShuiFong/DTedit", lib = applibpath)
 #  (removes absolute requirement for package 'pool')
 #  devtools::install_github('DavidPatShuiFong/dbConnection')
 
-install_git("https://github.com/DavidPatShuiFong/dbConnection", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", lib = applibpath)
 
 # dMeasure - the object-oriented R6 engine of the application
-install_git("https://github.com/DavidPatShuiFong/dMeasure", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "master", lib = applibpath)
 
 # DailyMeasure - the web/shiny interface to the app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
-#  install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath)
-install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "master", lib = applibpath)
+#  install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)

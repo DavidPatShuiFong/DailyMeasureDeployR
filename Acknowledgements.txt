@@ -1,8 +1,9 @@
 Acknowledgements
 
-Advanced BAT to EXE converter v4.11
- BDargo Software
+BAT to EXE converter 
+ Fatih Kodak
  Convert batch file "DailyMeasure.bat" to "DailyMeasure.EXE"
+ https://github.com/99fk/Bat-To-Exe-Converter-Downloader
  
 Inno Setup v6.0.2
  Create ".iss" for installation/removal
