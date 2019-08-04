@@ -20,17 +20,16 @@ if (!dir.exists(applibpath)) {
 }
 
 .libPaths(c(applibpath, .Library))
-				 
+
 # shinycssloaders - loading animations
 #  custom version based on Gao Zheng's 'transparent' background version
 #  installed with devtools::install_github('DavidPatShuiFong/shinycssloaders')
 
 install_git("https://github.com/DavidPatShuiFong/shinycssloaders", lib = applibpath)
 
-# DT - datatables for R. 
-#   requires version 0.5.3 (development version) or 0.6.0 (CRAN release version) or greater
-#   unfortunately, MRAN 15th April 2019 only has version 0.5.0
-#   remotes::install_github('rstudio/DT')
+# DT - datatables for R.
+#  requires version 0.5.3 (development version) or 0.6.0 (CRAN release) or greater
+#  unfortunately, MRAN 15th April 2019 only has version 0.5.0
 
 install_git("https://github.com/rstudio/DT", lib = applibpath)
 

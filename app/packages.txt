@@ -17,7 +17,6 @@ shinydashboardPlus
 shinyWidgets
 shinytoastr
 shinyFiles
-shinycssloaders
 configr
 DBI
 odbc
@@ -30,5 +29,3 @@ R6
 dplyr
 configr
 pipeR
-dbConnection
-dMeasure
