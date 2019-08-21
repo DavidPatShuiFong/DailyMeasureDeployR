@@ -2,11 +2,9 @@
 ; Creates icon in the Programs folder of the
 ; Start Menu instead of in a subfolder, and also creates a desktop icon.
 
-; SEE THE DOCUMENTATION FOR DETAILS ON CREATING .ISS SCRIPT FILES!
-
 [Setup]
 AppName=DailyMeasure
-AppVersion=1.0.0
+AppVersion=1.0.1
 WizardStyle=modern
 DefaultDirName={autopf}\DailyMeasure
 ; Since no icons will be created in "{group}", we don't need the wizard
