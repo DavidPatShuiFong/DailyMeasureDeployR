@@ -5,7 +5,7 @@ Installing from 'skeleton' DesktopDeployR clone
 * Start R-Portable
 
 ** set the current directory to the base-directory (which has ./app and ./dist directories)
-   (e.g. 'setwd("../../")'
+   e.g. 'setwd("../../")'
 
 ** source the ./dist/script/R/run.R script. 
    This will install packages described in ./app/packages.txt
