@@ -4,7 +4,8 @@ Installing from 'skeleton' DesktopDeployR clone
 
 * Start R-Portable
 
-** set the current directory the base-directory (which has ./app and ./dist directories)
+** set the current directory to the base-directory (which has ./app and ./dist directories)
+   (e.g. 'setwd("../../")'
 
 ** source the ./dist/script/R/run.R script. 
    This will install packages described in ./app/packages.txt
@@ -14,7 +15,7 @@ Installing from 'skeleton' DesktopDeployR clone
    install.packages("devtools")
 
 ** source the ./app/packagesCustom.R
-   This will install dMeasure and DailyMeausre packages
+   This will install dMeasure and DailyMeasure packages
    Also installs various other packages which are not 'standard' CRAN/MRAN packages
    or where more up-to-date 'development' version of the package is required
 
