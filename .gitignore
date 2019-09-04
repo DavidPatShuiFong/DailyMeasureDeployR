@@ -11,3 +11,5 @@ DailyMeasure_cfg\.sqlite
 DailyMeasure_cfg\.yaml
 
 DailyMeasureOld\.exe
+
+debug.log
