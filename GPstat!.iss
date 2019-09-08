@@ -4,7 +4,7 @@
 
 [Setup]
 AppName=GPstat
-AppVersion=1.3.0.0.4.0
+AppVersion=1.3.1.0.4.99
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
 ; Since no icons will be created in "{group}", we don't need the wizard
@@ -18,7 +18,7 @@ PrivilegesRequiredOverridesAllowed = dialog
 Compression=lzma2
 SolidCompression=yes
 OutputDir=userdocs:InnoOutput
-OutputBaseFilename=GPstat Setup
+OutputBaseFilename="GPstat! Setup"
 
 [Files]
 Source: "*"; \

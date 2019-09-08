@@ -19,7 +19,7 @@ if (!dir.exists(applibpath)) {
   dir.create(applibpath)
 }
 
-.libPaths(c(applibpath, .Library))
+.libPaths(c(.Library, applibpath))
 
 # shinycssloaders - loading animations
 #  custom version based on Gao Zheng's 'transparent' background version
@@ -47,9 +47,9 @@ install_git("https://github.com/DavidPatShuiFong/DTedit", lib = applibpath)
 install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", lib = applibpath)
 
 # dMeasure - the object-oriented R6 engine of the application
-install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "master", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath)
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
-install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "master", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath)
 #  install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)
