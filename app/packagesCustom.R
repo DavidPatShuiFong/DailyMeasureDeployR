@@ -44,10 +44,22 @@ install_git("https://github.com/DavidPatShuiFong/DTedit", lib = applibpath)
 #  (removes absolute requirement for package 'pool')
 #  devtools::install_github('DavidPatShuiFong/dbConnection')
 
-install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "develop", lib = applibpath)
+
+# Framingham Risk Equation package
+install_git("https://github.com/DavidPatShuiFong/framinghamRiskEquation", ref = "develop", lib = applibpath)
 
 # dMeasure - the object-oriented R6 engine of the application
 install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath)
+
+# dMeasure QIM - Quality Improvement Measures module
+install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "develop", lib = applibpath)
+
+# dMeasure Billings - Billings module
+install_git("https://github.com/DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = applibpath)
+
+# dMeasure CDM - Chronic Disease Management module
+install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "develop", lib = applibpath)
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
