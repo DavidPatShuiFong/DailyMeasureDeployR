@@ -6,11 +6,11 @@
 AppName=GPstat
 AppVersion=1.3.3.0.7.0
 WizardStyle=modern
-DefaultDirName={autopf}\GPstat
+DefaultDirName="{autopf}\GPstat Lite"
 ; Since no icons will be created in "{group}", we don't need the wizard
 ; to ask for a Start Menu folder name:
 DisableProgramGroupPage=yes
-UninstallDisplayIcon={app}\GPstat!.exe
+UninstallDisplayIcon="{app}\GPstat! Lite.exe"
 PrivilegesRequired = lowest
 ; can be installed 'locally' without administrator rights
 PrivilegesRequiredOverridesAllowed = dialog
@@ -18,14 +18,14 @@ PrivilegesRequiredOverridesAllowed = dialog
 Compression=lzma2
 SolidCompression=yes
 OutputDir=userdocs:InnoOutput
-OutputBaseFilename="GPstat! Setup"
+OutputBaseFilename="GPstat! Lite Setup"
 
 [Files]
 Source: "*"; \
-Excludes: ".git,""GPStat! Lite.exe"", .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug, README_DesktopDeployR.md"; \
+Excludes: "GPstat!.exe, .git, .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug, README_DesktopDeployR.md"; \
 Flags: recursesubdirs; \
 DestDir: "{app}"
 
 [Icons]
-Name: "{autoprograms}\GPstat!"; Filename: "{app}\GPstat!.exe"
-Name: "{autodesktop}\GPstat!"; Filename: "{app}\GPstat!.exe"
+Name: "{autoprograms}\GPstat! Lite"; Filename: "{app}\GPstat! Lite.exe"
+Name: "{autodesktop}\GPstat! Lite"; Filename: "{app}\GPstat! Lite.exe"
