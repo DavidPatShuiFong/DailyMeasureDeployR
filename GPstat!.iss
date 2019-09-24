@@ -3,7 +3,7 @@
 ; Start Menu instead of in a subfolder, and also creates a desktop icon.
 
 [Setup]
-AppName=GPstat
+AppName="GPstat!"
 AppVersion=1.3.4.0.7.0
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
