@@ -4,7 +4,7 @@
 
 [Setup]
 AppName=GPstat
-AppVersion=1.3.3.0.7.0
+AppVersion=1.3.4.0.7.0
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
 ; Since no icons will be created in "{group}", we don't need the wizard
@@ -22,7 +22,7 @@ OutputBaseFilename="GPstat! Setup"
 
 [Files]
 Source: "*"; \
-Excludes: ".git,""GPStat! Lite.exe"", .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug, README_DesktopDeployR.md"; \
+Excludes: ".git,""GPStat! Lite.exe"", *.iss, .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug, README_DesktopDeployR.md"; \
 Flags: recursesubdirs; \
 DestDir: "{app}"
 
