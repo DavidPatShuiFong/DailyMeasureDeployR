@@ -63,5 +63,5 @@ install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "master", l
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
-install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "master", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath)
 #  install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)

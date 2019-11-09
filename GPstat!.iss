@@ -1,10 +1,11 @@
+
 ; -- GPstat!.iss -- (based on Inno Setup's "example2.iss")
 ; Creates icon in the Programs folder of the
 ; Start Menu instead of in a subfolder, and also creates a desktop icon.
 
 [Setup]
 AppName="GPstat!"
-AppVersion=1.3.4.0.7.0
+AppVersion=1.3.7.0.7.2
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
 ; Since no icons will be created in "{group}", we don't need the wizard
