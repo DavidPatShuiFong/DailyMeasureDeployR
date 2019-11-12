@@ -7,5 +7,5 @@ BAT to EXE converter
  
 Inno Setup v6.0.2
  Create ".iss" for installation/removal
- 
- 
+
+Heartbeat icon made by Freepik from www.flaticon.com
