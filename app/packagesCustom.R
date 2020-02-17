@@ -33,6 +33,13 @@ install_git("https://github.com/DavidPatShuiFong/shinycssloaders", lib = applibp
 
 install_git("https://github.com/rstudio/DT", lib = applibpath)
 
+# dbplyr - database interaction for dplyr (tidyverse)
+#  requires version which gracefully deals with NA (using try_cast instead of cast)
+#  and also returns floats with as.numeric/as.double (rather than integers)
+# customized version by David Fong
+
+install_git("https://github.com/DavidPatShuiFong/dbplyr", ref = "develop", lib = applibpath)
+
 # DTedit - datatable edit wrapper.
 #  substantially based on jbryer/DTedit
 #  devtools::install_github('DavidPatShuiFong/DTedit')
@@ -50,7 +57,7 @@ install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", 
 install_git("https://github.com/DavidPatShuiFong/framinghamRiskEquation", ref = "master", lib = applibpath)
 
 # dMeasure - the object-oriented R6 engine of the application
-install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "master", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath)
 
 # dMeasure QIM - Quality Improvement Measures module
 install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "master", lib = applibpath)
@@ -63,5 +70,5 @@ install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "master", l
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
-install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "master", lib = applibpath)
+install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath)
 #  install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)

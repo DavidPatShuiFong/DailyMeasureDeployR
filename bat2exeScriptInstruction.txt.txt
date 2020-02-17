@@ -1,0 +1,19 @@
+https://stackoverflow.com/questions/28174386/how-can-a-bat-file-be-converted-to-exe-without-third-party-tools?answertab=active#tab-top
+
+If you store this code [GPstat!.cs] above to MySuperApp.cs just next to MySuperApp.bat
+ and then compile it with csc.exe /target:winexe MySuperApp.cs
+ (and maybe even add /win32icon:MySuperApp.ico to add a fancy icon)
+ it will generate a MySuperApp.exe.
+
+Launching MySuperApp.exe will call MySuperApp.bat (the bat-file with the same name).
+
+=================================
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe "GPstat!.cs" /win32icon:dist/script/heartbeat.ico
+=================================
+
+https://stackoverflow.com/questions/6660512/how-to-get-csc-exe-path
+
+Open Command Prompt or Powershell and run the below command
+ to list complete path of compilers for different .Net Frameworks version installed.
+
+ dir %WINDIR%\Microsoft.NET\Framework64\csc.exe /s/b 
