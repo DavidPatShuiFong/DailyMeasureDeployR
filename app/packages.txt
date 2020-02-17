@@ -30,3 +30,4 @@ R6
 dplyr
 configr
 pipeR
+RMariaDB
