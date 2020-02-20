@@ -1,11 +1,10 @@
-
 ; -- GPstat!.iss -- (based on Inno Setup's "example2.iss")
 ; Creates icon in the Programs folder of the
 ; Start Menu instead of in a subfolder, and also creates a desktop icon.
 
 [Setup]
 AppName="GPstat!"
-AppVersion=1.5.0.0.9.0
+AppVersion=1.5.2.0.9.2
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
 ; Since no icons will be created in "{group}", we don't need the wizard
@@ -23,7 +22,7 @@ OutputBaseFilename="GPstat! Setup"
 
 [Files]
 Source: "*"; \
-Excludes: ".git,""GPStat! Lite.exe"", GPstat!.cs, *.iss, .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug, README_DesktopDeployR.md"; \
+Excludes: ".git,""GPStat! Lite.exe"", GPstat!.cs, *.iss, .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug, README_DesktopDeployR.md, bat2exeScriptInstruction.txt"; \
 Flags: recursesubdirs; \
 DestDir: "{app}"
 
