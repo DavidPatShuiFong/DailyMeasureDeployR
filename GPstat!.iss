@@ -4,7 +4,7 @@
 
 [Setup]
 AppName="GPstat!"
-AppVersion=1.5.2.0.9.2
+AppVersion=1.5.3.0.9.3
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
 ; Since no icons will be created in "{group}", we don't need the wizard
@@ -15,7 +15,7 @@ PrivilegesRequired = lowest
 ; can be installed 'locally' without administrator rights
 PrivilegesRequiredOverridesAllowed = dialog
 ; ask if 'global' install is requested, anyway
-Compression=zip
+Compression=lzma2/fast
 SolidCompression=yes
 OutputDir=userdocs:InnoOutput
 OutputBaseFilename="GPstat! Setup"
