@@ -65,16 +65,19 @@ install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", 
 install_git("https://github.com/DavidPatShuiFong/framinghamRiskEquation", ref = "master", lib = applibpath, upgrade = "never")
 
 # dMeasure - the object-oriented R6 engine of the application
-install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath, upgrade = "never")
+install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "feature/shinyapps", lib = applibpath, upgrade = "never")
 
 # dMeasure QIM - Quality Improvement Measures module
 install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "master", lib = applibpath, upgrade = "never")
 
 # dMeasure Billings - Billings module
-install_git("https://github.com/DavidPatShuiFong/dMeasureBillings", ref = "master", lib = applibpath, upgrade = "never")
+install_git("https://github.com/DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure CDM - Chronic Disease Management module
 install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "master", lib = applibpath, upgrade = "never")
+
+# dMeasure Custom
+install_git("https://github.com/DavidPatShuiFong/dMeasureCustom", ref = "master", lib = applibpath, upgrade = "never")
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 #  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
