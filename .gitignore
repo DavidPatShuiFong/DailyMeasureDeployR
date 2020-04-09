@@ -13,3 +13,5 @@ DailyMeasure_cfg\.yaml
 DailyMeasureOld\.exe
 
 debug.log
+
+.RData

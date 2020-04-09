@@ -41,6 +41,10 @@ install_git("https://github.com/carlganz/rintrojs", lib = applibpath, upgrade = 
 
 install_git("https://github.com/rstudio/DT", lib = applibpath, upgrade = "never")
 
+# emo - emoticons for R
+
+install_git("https://github.com/hadley/emo", lib = applibpath, upgrade = "never")
+
 # dbplyr - database interaction for dplyr (tidyverse)
 #  requires version which gracefully deals with NA (using try_cast instead of cast)
 #  and also returns floats with as.numeric/as.double (rather than integers)
@@ -65,7 +69,7 @@ install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", 
 install_git("https://github.com/DavidPatShuiFong/framinghamRiskEquation", ref = "master", lib = applibpath, upgrade = "never")
 
 # dMeasure - the object-oriented R6 engine of the application
-install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "feature/shinyapps", lib = applibpath, upgrade = "never")
+install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure QIM - Quality Improvement Measures module
 install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "master", lib = applibpath, upgrade = "never")
@@ -74,12 +78,12 @@ install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "master", l
 install_git("https://github.com/DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure CDM - Chronic Disease Management module
-install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "master", lib = applibpath, upgrade = "never")
+install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure Custom
-install_git("https://github.com/DavidPatShuiFong/dMeasureCustom", ref = "master", lib = applibpath, upgrade = "never")
+# install_git("https://github.com/DavidPatShuiFong/dMeasureCustom", ref = "master", lib = applibpath, upgrade = "never")
+tryCatch(remove.packages("dMeasureCustom", .libPaths()[[1]]), error = function(cond) {cond}) # error raised if not installed
+tryCatch(remove.packages("dMeasureCustom", .libPaths()[[2]]), error = function(cond) {cond}) # need to remove from both libPaths!
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
-#  install_git('https://github.com/DavidPatShuiFong/DailyMeasure/tree/develop')
 install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath, upgrade = "never")
-#  install_local("C:/Users/Public/Rprojects/DailyMeasure", lib = applibpath)
