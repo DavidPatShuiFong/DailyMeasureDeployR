@@ -72,7 +72,7 @@ install_git("https://github.com/DavidPatShuiFong/framinghamRiskEquation", ref = 
 install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure QIM - Quality Improvement Measures module
-install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "master", lib = applibpath, upgrade = "never")
+install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure Billings - Billings module
 install_git("https://github.com/DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = applibpath, upgrade = "never")
