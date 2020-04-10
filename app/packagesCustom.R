@@ -25,65 +25,65 @@ if (!dir.exists(applibpath)) {
 #  custom version based on Gao Zheng's 'transparent' background version
 #  installed with devtools::install_github('DavidPatShuiFong/shinycssloaders')
 
-install_git("https://github.com/DavidPatShuiFong/shinycssloaders", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/shinycssloaders", lib = applibpath, upgrade = "never")
 
 # airtabler
-install_git("https://github.com/bergant/airtabler", lib = applibpath, upgrade = "never")
+install_github("bergant/airtabler", lib = applibpath, upgrade = "never")
 
 # rintrojs
 #  requires version 0.2.2 (or perhaps 0.2.1)
 #  MRAN 15th April 2019 only has version 0.2.0
-install_git("https://github.com/carlganz/rintrojs", lib = applibpath, upgrade = "never")
+install_github("carlganz/rintrojs", lib = applibpath, upgrade = "never")
 
 # DT - datatables for R.
 #  requires version 0.5.3 (development version) or 0.6.0 (CRAN release) or greater
 #  unfortunately, MRAN 15th April 2019 only has version 0.5.0
 
-install_git("https://github.com/rstudio/DT", lib = applibpath, upgrade = "never")
+install_github("rstudio/DT", lib = applibpath, upgrade = "never")
 
 # emo - emoticons for R
 
-install_git("https://github.com/hadley/emo", lib = applibpath, upgrade = "never")
+install_github("hadley/emo", lib = applibpath, upgrade = "never")
 
 # dbplyr - database interaction for dplyr (tidyverse)
 #  requires version which gracefully deals with NA (using try_cast instead of cast)
 #  and also returns floats with as.numeric/as.double (rather than integers)
 # customized version by David Fong
 
-install_git("https://github.com/DavidPatShuiFong/dbplyr", ref = "develop", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dbplyr", ref = "develop", lib = applibpath, upgrade = "never")
 
 # DTedit - datatable edit wrapper.
 #  substantially based on jbryer/DTedit
 #  devtools::install_github('DavidPatShuiFong/DTedit')
 
-install_git("https://github.com/DavidPatShuiFong/DTedit", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/DTedit", lib = applibpath, upgrade = "never")
 
 # dbConnection - generalized database access object
 #  uses either DBI or pool, depending on availability or preferences
 #  (removes absolute requirement for package 'pool')
 #  devtools::install_github('DavidPatShuiFong/dbConnection")
 
-install_git("https://github.com/DavidPatShuiFong/dbConnection", ref = "master", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dbConnection", ref = "master", lib = applibpath, upgrade = "never")
 
 # Framingham Risk Equation package
-install_git("https://github.com/DavidPatShuiFong/framinghamRiskEquation", ref = "master", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/framinghamRiskEquation", ref = "master", lib = applibpath, upgrade = "never")
 
 # dMeasure - the object-oriented R6 engine of the application
-install_git("https://github.com/DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dMeasure", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure QIM - Quality Improvement Measures module
-install_git("https://github.com/DavidPatShuiFong/dMeasureQIM", ref = "develop", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dMeasureQIM", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure Billings - Billings module
-install_git("https://github.com/DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure CDM - Chronic Disease Management module
-install_git("https://github.com/DavidPatShuiFong/dMeasureCDM", ref = "develop", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dMeasureCDM", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure Custom
-# install_git("https://github.com/DavidPatShuiFong/dMeasureCustom", ref = "master", lib = applibpath, upgrade = "never")
-tryCatch(remove.packages("dMeasureCustom", .libPaths()[[1]]), error = function(cond) {cond}) # error raised if not installed
-tryCatch(remove.packages("dMeasureCustom", .libPaths()[[2]]), error = function(cond) {cond}) # need to remove from both libPaths!
+install_github("DavidPatShuiFong/dMeasureCustom", ref = "master", lib = applibpath, upgrade = "never")
+# tryCatch(remove.packages("dMeasureCustom", .libPaths()[[1]]), error = function(cond) {cond}) # error raised if not installed
+# tryCatch(remove.packages("dMeasureCustom", .libPaths()[[2]]), error = function(cond) {cond}) # need to remove from both libPaths!
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
-install_git("https://github.com/DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath, upgrade = "never")
