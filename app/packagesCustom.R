@@ -56,7 +56,7 @@ install_github("DavidPatShuiFong/dbplyr", ref = "develop", lib = applibpath, upg
 #  substantially based on jbryer/DTedit
 #  devtools::install_github('DavidPatShuiFong/DTedit')
 
-install_github("DavidPatShuiFong/DTedit", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/DTedit", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dbConnection - generalized database access object
 #  uses either DBI or pool, depending on availability or preferences

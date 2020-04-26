@@ -5,4 +5,4 @@
 library(DailyMeasure)
 DailyMeasure::GPstat()
 # for demonstration mode use :
-#   DailyMeasure::GPstat(appmode = "none", host = "0.0.0.0", launch.browser = FALSE, port = 7575, demonstration = TRUE)
+# DailyMeasure::GPstat(appmode = "none", host = "0.0.0.0", launch.browser = FALSE, port = 7575, demonstration = TRUE)
