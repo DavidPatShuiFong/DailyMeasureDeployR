@@ -31,3 +31,4 @@ dplyr
 configr
 pipeR
 shinyjqui
+data.table

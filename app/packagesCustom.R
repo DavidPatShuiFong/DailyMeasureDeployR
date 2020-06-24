@@ -81,9 +81,12 @@ install_github("DavidPatShuiFong/dMeasureBillings", ref = "develop", lib = appli
 install_github("DavidPatShuiFong/dMeasureCDM", ref = "develop", lib = applibpath, upgrade = "never")
 
 # dMeasure Custom
-install_github("DavidPatShuiFong/dMeasureCustom", ref = "master", lib = applibpath, upgrade = "never")
+install_github("DavidPatShuiFong/dMeasureCustom", ref = "develop", lib = applibpath, upgrade = "never")
 # tryCatch(remove.packages("dMeasureCustom", .libPaths()[[1]]), error = function(cond) {cond}) # error raised if not installed
 # tryCatch(remove.packages("dMeasureCustom", .libPaths()[[2]]), error = function(cond) {cond}) # need to remove from both libPaths!
+
+# dMeasure Medication
+install_github("DavidPatShuiFong/dMeasureMedication", ref = "develop", lib = applibpath, upgrade = "never")
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 install_github("DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath, upgrade = "never")
