@@ -41,6 +41,8 @@ install_github("carlganz/rintrojs", lib = applibpath, upgrade = "never")
 
 install_github("rstudio/DT", lib = applibpath, upgrade = "never")
 
+install_github("dreamRs/shinyWidgets@v0.5.1", lib = applibpath, upgrade = "never")
+
 # emo - emoticons for R
 
 install_github("hadley/emo", lib = applibpath, upgrade = "never")
