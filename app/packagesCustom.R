@@ -38,10 +38,26 @@ install_github("carlganz/rintrojs", lib = applibpath, upgrade = "never")
 # DT - datatables for R.
 #  requires version 0.5.3 (development version) or 0.6.0 (CRAN release) or greater
 #  unfortunately, MRAN 15th April 2019 only has version 0.5.0
-
 install_github("rstudio/DT", lib = applibpath, upgrade = "never")
 
-install_github("dreamRs/shinyWidgets@v0.5.1", lib = applibpath, upgrade = "never")
+# promises
+install_github("rstudio/promises@v1.1.0", lib = applibpath, upgrade = "never")
+
+# httpuv
+#  at least version 1.5.2 for shiny 1.5.0
+install_github("rstudio/httpuv@v1.5.2", lib = applibpath, upgrade = "never")
+
+# htmltools
+#  at least version 0.4.0.9003 for shiny 1.5.0
+install_github("rstudio/htmltools@v0.5.0", lib = applibpath, upgrade = "never")
+
+# shiny
+#  at least version 1.5.0
+install_github("rstudio/shiny@v1.5.0", lib = applibpath, upgrade = "never")
+
+# shinyWidgets 
+# at least version 0.5.2
+install_github("dreamRs/shinyWidgets@v0.5.3", lib = applibpath, upgrade = "never")
 
 # emo - emoticons for R
 
