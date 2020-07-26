@@ -17,3 +17,7 @@ Open Command Prompt or Powershell and run the below command
  to list complete path of compilers for different .Net Frameworks version installed.
 
  dir %WINDIR%\Microsoft.NET\Framework64\csc.exe /s/b 
+
+e.g.
+
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /target:winexe "GPstat!.cs" /win32icon:dist/script/heartbeat.ico

@@ -22,7 +22,7 @@ OutputBaseFilename="GPstat! Setup"
 
 [Files]
 Source: "*"; \
-Excludes: ".git,""GPStat! Lite.exe"", GPstat!.cs, *.iss, .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug.log, debug, README_DesktopDeployR.md, bat2exeScriptInstruction.txt"; \
+Excludes: ".git, GPstat!.cs, *.iss, .Rproj.user, .gitignore, .Rhistory, DailyMeasure_cfg.sqlite, DailyMeasure_cfg.yaml, DailyMeasureDeployR.Rproj, debug.log, debug, README_DesktopDeployR.md, bat2exeScriptInstruction.txt"; \
 Flags: recursesubdirs; \
 DestDir: "{app}"
 

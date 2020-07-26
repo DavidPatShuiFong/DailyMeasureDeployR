@@ -21,14 +21,14 @@ if (!dir.exists(applibpath)) {
 
 .libPaths(c(.Library, applibpath))
 
-# shinycssloaders - loading animations
-#  custom version based on Gao Zheng's 'transparent' background version
-#  installed with devtools::install_github('DavidPatShuiFong/shinycssloaders')
-
-install_github("DavidPatShuiFong/shinycssloaders", lib = applibpath, upgrade = "never")
+# shinybusy
+install_github("dreamRs/shinybusy@v0.2.0", lib = applibpath, upgrade = "never")
 
 # airtabler
 install_github("bergant/airtabler", lib = applibpath, upgrade = "never")
+
+# rlang
+install_github("r-lib/rlang@v0.4.5", lib = applibpath, upgrade = "never")
 
 # rintrojs
 #  requires version 0.2.2 (or perhaps 0.2.1)
