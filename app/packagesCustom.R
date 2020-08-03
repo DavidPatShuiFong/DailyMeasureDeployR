@@ -40,6 +40,12 @@ install_github("carlganz/rintrojs", lib = applibpath, upgrade = "never")
 #  unfortunately, MRAN 15th April 2019 only has version 0.5.0
 install_github("rstudio/DT", lib = applibpath, upgrade = "never")
 
+# fastmap
+install_github("r-lib/fastmap@v1.0.1", lib = applibpath, upgrade = "never")
+
+# htmlwidgets
+install_github("ramnathv/htmlwidgets@v1.5.1", lib = applibpath, upgrade = "never")
+
 # promises
 install_github("rstudio/promises@v1.1.0", lib = applibpath, upgrade = "never")
 
