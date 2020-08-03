@@ -28,7 +28,7 @@ install_github("dreamRs/shinybusy@v0.2.0", lib = applibpath, upgrade = "never")
 install_github("bergant/airtabler", lib = applibpath, upgrade = "never")
 
 # rlang
-install_github("r-lib/rlang@v0.4.5", lib = applibpath, upgrade = "never")
+# install_github("r-lib/rlang@v0.4.7", lib = applibpath, upgrade = "never")
 
 # rintrojs
 #  requires version 0.2.2 (or perhaps 0.2.1)

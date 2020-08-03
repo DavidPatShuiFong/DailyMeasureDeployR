@@ -1,3 +1,11 @@
+As of 27th July 2020, GPstat!.exe uses futurist/runapp, by James Yang, on Github
+
+https://github.com/futurist/runapp
+
+with configuration stored in config.arg
+
+===================
+
 https://stackoverflow.com/questions/28174386/how-can-a-bat-file-be-converted-to-exe-without-third-party-tools?answertab=active#tab-top
 
 If you store this code [GPstat!.cs] above to MySuperApp.cs just next to MySuperApp.bat
