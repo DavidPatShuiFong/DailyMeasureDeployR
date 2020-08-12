@@ -27,6 +27,13 @@ install_github("dreamRs/shinybusy@v0.2.0", lib = applibpath, upgrade = "never")
 # airtabler
 install_github("bergant/airtabler", lib = applibpath, upgrade = "never")
 
+# various - for highcharter
+list_of_packages <- c("XML", "broom", "igraph", "quantmod", "rjson", "rlist", "TTR", "zoo", "highcharter")
+new_packages <- list_of_packages[!(list_of_packages %in% installed.packages()[, "Package"])]
+if (length(new_packages)) {
+  install.packages(new_packages, lib = applibpath, repos = c(CRAN = "https://mran.revolutionanalytics.com/snapshot/2019-04-15"), upgrade = "never")
+}
+
 # rlang
 # install_github("r-lib/rlang@v0.4.7", lib = applibpath, upgrade = "never")
 
@@ -40,8 +47,8 @@ install_github("carlganz/rintrojs", lib = applibpath, upgrade = "never")
 #  unfortunately, MRAN 15th April 2019 only has version 0.5.0
 install_github("rstudio/DT", lib = applibpath, upgrade = "never")
 
-# fastmap
-install_github("r-lib/fastmap@v1.0.1", lib = applibpath, upgrade = "never")
+# fastmap v1.0.1
+install_github("r-lib/fastmap", lib = applibpath, upgrade = "never")
 
 # htmlwidgets
 install_github("ramnathv/htmlwidgets@v1.5.1", lib = applibpath, upgrade = "never")
