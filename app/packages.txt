@@ -8,27 +8,3 @@
 jsonlite
 
 # if deploying shiny based applications:
-shiny
-tidyr
-tibble
-dbplyr
-shinyjs
-shinydashboard
-shinydashboardPlus
-shinyWidgets
-shinytoastr
-shinyFiles
-configr
-DBI
-odbc
-RSQLite
-pool
-stringi
-magrittr
-sodium
-R6
-dplyr
-configr
-pipeR
-shinyjqui
-data.table

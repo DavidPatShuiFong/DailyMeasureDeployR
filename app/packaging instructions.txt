@@ -14,10 +14,13 @@ Installing from 'skeleton' DesktopDeployR clone
 ** install the devtools packages
    install.packages("devtools")
 
+** copy 'renv.lock' from DailyMeasure repository to the 'current/base' directory
+** 'renv::restore()' - this will restore required packages *except* DailyMeasure
+   - it happens to copy the required packages to app/library (which is not the typical 'renv' default)
+   - probably looks for the first entry in .libPaths()
+
 ** source the ./app/packagesCustom.R
-   This will install dMeasure and DailyMeasure packages
-   Also installs various other packages which are not 'standard' CRAN/MRAN packages
-   or where more up-to-date 'development' version of the package is required
+   This will install the DailyMeasure package
 
 DailyMeasure.bat will start the application
 
