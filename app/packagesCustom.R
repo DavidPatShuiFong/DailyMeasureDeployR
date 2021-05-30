@@ -19,9 +19,9 @@ if (!dir.exists(applibpath)) {
   dir.create(applibpath)
 }
 
-.libPaths(c(.Library, applibpath))
+.libPaths(c(applibpath, .Library))
 
 # DailyMeasure - the web/shiny interface to the GPstat! app
 #  dependencies should  have been installed with 'renv'
 #  "no-multiarch" avoids attempting install of 32-bit version
-install_github("DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath, INSTALL_opts = c("--no-multiarch"), upgrade = "never")
+install_github("DavidPatShuiFong/DailyMeasure", ref = "develop", lib = applibpath, INSTALL_opts = c("--no-multiarch"), dependencies = FALSE, upgrade = "never")
