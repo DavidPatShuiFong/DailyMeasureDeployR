@@ -25,3 +25,8 @@ Installing from 'skeleton' DesktopDeployR clone
 DailyMeasure.bat will start the application
 
 The .iss file for Innosetup is in the base directory
+
+================
+
+if necessary use
+Sys.setenv(GITHUB_PAT = "xyz") to increase number of required Github downloads
