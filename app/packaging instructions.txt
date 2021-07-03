@@ -18,6 +18,8 @@ Installing from 'skeleton' DesktopDeployR clone
 ** 'renv::restore()' - this will restore required packages *except* DailyMeasure
    - it happens to copy the required packages to app/library (which is not the typical 'renv' default)
    - probably looks for the first entry in .libPaths()
+   - *don't* renv::activate()
+     - make sure there is no .Rprofile which tries to active 'renv'
 
 ** source the ./app/packagesCustom.R
    This will install the DailyMeasure package
