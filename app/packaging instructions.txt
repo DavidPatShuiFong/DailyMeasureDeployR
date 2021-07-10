@@ -32,3 +32,13 @@ The .iss file for Innosetup is in the base directory
 
 if necessary use
 Sys.setenv(GITHUB_PAT = "xyz") to increase number of required Github downloads
+
+================
+
+strange 'renv' behaviour
+
+- often attempting to install vctrs 0.3.8.9000, even though 0.3.2 is the version specified in the renv lockfile
+unfortunately vctrs 0.3.8.9000 also requires a very recent version of rlang
+- possible to 'force' installation of a different version of vctrs by manually adjusting the renv.lock file entry for vctrs
+e.g. change "version" to '0.3.3', "RemoteRef" to 'v0.3.3', and 'RemoteSha' to the SHA listed for that release on github.
+'Hash' can be removed
