@@ -4,7 +4,7 @@
 
 [Setup]
 AppName="GPstat!"
-AppVersion=2.3.0.0.10.0
+AppVersion=2.3.1.0.10.1
 WizardStyle=modern
 DefaultDirName={autopf}\GPstat
 ; Since no icons will be created in "{group}", we don't need the wizard
